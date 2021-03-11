@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".Screen.DashBoard.AddPost.AddPostsFragment">
+
+
+    <Spinner
+        android:id="@+id/spinTitle"
+        android:layout_width="250dp"
+        android:layout_height="61dp"
+        android:layout_gravity="right|end"
+        android:layout_marginRight="90dp"
+        android:textAlignment="viewStart"
+        app:layout_constraintVertical_bias="0.639" />
+
+    <EditText
+        android:id="@+id/propup_description"
+        android:layout_width="389dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/propup_edittext_style"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prpopup_title" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/prop_profile"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="-120dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_baseline_account_circle_24" />
+
+    <ImageView
+        android:id="@+id/prop_post_img"
+        android:layout_width="wrap_content"
+        android:layout_height="228dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/post"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prpopup_description"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginBottom="40dp"/>
+
+
+    <ImageView
+        android:id="@+id/prop_add"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:background="@drawable/cycle_bg_icons"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="center"
+
+        app:srcCompat="@drawable/ic_baseline_create" />
+
+    <ProgressBar
+        android:background="@drawable/cycle_bg_icons"
+        android:id="@+id/propup_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="4dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>
