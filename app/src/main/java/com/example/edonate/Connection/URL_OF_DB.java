@@ -22,5 +22,6 @@ public class URL_OF_DB {
     public String addcomments=BaseURL+"addcomments.php";
     public String loadUsers=BaseURL+"loadProfile.php";
     public String addpost=BaseURL+"addpost.php";
+    public String editProfile=BaseURL+"editprofile.php";
 
 }

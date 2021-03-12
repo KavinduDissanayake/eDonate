@@ -160,7 +160,7 @@ public class ProfileFragment extends Fragment {
                     .addFormDataPart( "cnumber", cnumber )
                     .build();
             Request request = new Request.Builder()
-                    .url( "http://192.168.1.13/eDonate/MobileApp/editprofile.php" )
+                    .url( URL_OF_DB.getInstance().editProfile )
                     .post( reqestBody )
                     .build();
 
